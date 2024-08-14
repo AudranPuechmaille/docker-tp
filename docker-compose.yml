@@ -1,0 +1,12 @@
+services:
+  angular-app:
+    build:
+      context: ./angular-app/my-angular-app
+    ports:
+      - "8081:80"
+
+  java-app:
+    build:
+      context: ./java-app
+    ports:
+      - "8082:8080"  # Si l'application Java écoute sur le port 8080
